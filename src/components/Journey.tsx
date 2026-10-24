@@ -51,7 +51,19 @@ export function Journey() {
                 >
                   <h3 className="text-2xl font-medium tracking-tight md:text-4xl">{item.title}</h3>
                   <p className="mt-2 font-serif text-xl italic text-accent md:text-2xl">{item.org}</p>
-                  <p className="mt-5 max-w-2xl leading-relaxed text-muted md:text-lg">{item.description}</p>
+                  {item.description && (
+                    <p className="mt-5 max-w-2xl leading-relaxed text-muted md:text-lg">{item.description}</p>
+                  )}
+                  {item.points && (
+                    <ul className="mt-5 flex max-w-2xl flex-col gap-3">
+                      {item.points.map((point) => (
+                        <li key={point} className="flex gap-3 leading-relaxed text-muted md:text-lg">
+                          <span className="mt-[0.7em] h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                   <ul className="mt-6 flex flex-wrap gap-2">
                     {item.tags.map((tag) => (
                       <li key={tag} className="rounded-full border border-white/10 px-3 py-1 text-xs text-muted">

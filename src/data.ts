@@ -32,29 +32,48 @@ export const stats = [
   { value: 2, decimals: 0, suffix: '', label: 'Java OOP certifications' },
 ];
 
-export const journey = [
+export type JourneyItem = {
+  period: string;
+  title: string;
+  org: string;
+  description?: string;
+  points?: string[];
+  tags: string[];
+};
+
+export const journey: JourneyItem[] = [
   {
     period: 'Jun 2026 — Present',
     title: 'Graduate Engineering Trainee',
     org: 'Pricol Limited · Coimbatore',
-    description:
-      'Full-time full stack development on internal web applications — building Laravel and PHP services and frontends, and working with Linux servers that run them.',
-    tags: ['Full-Stack Development', 'Laravel', 'Linux Server'],
+    points: [
+      'Built a secure document management platform for employee records, using Microsoft Graph and OneDrive, with a REST API for other internal applications.',
+      'Synced employee profile photos across Microsoft 365 accounts using the Graph API.',
+      'Developed an online assessment portal with timed tests and anti-cheat controls (screenshot and tab-switch detection).',
+      'Working on a learning management system, a digital consent and e-signature platform, and approval-workflow apps integrated with SAP.',
+    ],
+    tags: ['Laravel', 'React', 'Microsoft Graph', 'Linux Server'],
   },
   {
     period: 'May 2026',
     title: 'On-Job Trainee',
     org: 'Pricol Limited',
-    description:
-      'A month of hands-on training across the team workflow — Git and GitLab, SQL Server databases, and day-to-day project and time management.',
-    tags: ['Git', 'GitLab', 'SQL Server', 'Adminer'],
+    points: [
+      'Built a CAPEX management system with configurable multi-level approvals, role-based access across multiple companies, and SAP integration.',
+      "Worked with Git/GitLab, SQL Server and Adminer in the team's delivery workflow.",
+    ],
+    tags: ['Laravel', 'React', 'SQL Server', 'GitLab'],
   },
   {
     period: 'Feb — May 2026',
     title: 'Laravel Developer Intern',
     org: 'Pricol Limited',
-    description: 'Started at Pricol building features with PHP and Laravel on-site with the development team.',
-    tags: ['PHP', 'Laravel'],
+    points: [
+      'Built a travel analytics dashboard (Laravel, React, ClickHouse) with KPI cards, interactive charts and billing reports.',
+      'Developed a Python ETL pipeline that syncs report data into SQL Server, with automated validation and a data-quality dashboard.',
+      'Built approval-workflow applications with Microsoft SSO, including a vendor quotation comparison tool that replaced manual Excel analysis.',
+    ],
+    tags: ['Laravel', 'ClickHouse', 'Python', 'Microsoft SSO'],
   },
   {
     period: 'Nov 2022 — Feb 2026',
