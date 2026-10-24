@@ -61,7 +61,7 @@ export const journey = [
     title: 'B.E. Computer Science & Engineering',
     org: 'Velalar College of Engineering and Technology',
     description:
-      'Graduated with a CGPA of 8.09. Built a strong base in data structures, databases and software engineering, earned Java OOP certifications from Simplilearn and MindLuster, and explored deep learning through an MRI brain-tumor detection project.',
+      'Graduated with a CGPA of 8.09. Built a strong base in data structures, databases and software engineering, earned Java OOP certifications from Simplilearn and MindLuster, and explored deep learning through a soft tissue tumor detection project on medical images.',
     tags: ['CGPA 8.09', 'Deep Learning', 'Java OOP', 'DBMS'],
   },
   {
@@ -107,7 +107,7 @@ export const skillGroups: SkillGroup[] = [
   {
     key: 'ai',
     title: 'Deep Learning',
-    description: 'Computer-vision models for real problems — like classifying brain tumors from MRI scans.',
+    description: 'Computer-vision models for real problems — like detecting soft tissue tumors in medical images.',
     items: ['Python', 'TensorFlow', 'CNN', 'ResNet50'],
     span: 'md:col-span-2',
   },
@@ -174,11 +174,11 @@ export const featuredProjects: Project[] = [
     glow: '#F87171',
   },
   {
-    title: 'AI Tumor Detection',
-    year: '2025',
+    title: 'Soft Tissue Tumor Detection',
+    year: '2026',
     category: 'Deep Learning · Research',
     description:
-      'An MRI brain-tumor detection system using convolutional neural networks and transfer learning on ResNet50 to classify tumor types with high accuracy.',
+      'A deep learning system for early-stage soft tissue tumor detection from medical images — covering image pre-processing, CNN-based models and evaluation to support clinical decision-making. Currently being prepared for academic publication.',
     tech: ['Python', 'TensorFlow', 'CNN', 'ResNet50'],
     repo: 'https://github.com/Ismayeel2023',
     file: 'model.py',
@@ -186,7 +186,7 @@ export const featuredProjects: Project[] = [
       'base = ResNet50(weights="imagenet", include_top=False)',
       'x = GlobalAveragePooling2D()(base.output)',
       'x = Dropout(0.3)(x)',
-      'out = Dense(4, activation="softmax")(x)',
+      'out = Dense(num_classes, activation="softmax")(x)',
       '',
       'model = Model(base.input, out)',
     ],
