@@ -71,7 +71,7 @@ export const journey: JourneyItem[] = [
     points: [
       'Built a travel analytics dashboard (Laravel, React, ClickHouse) with KPI cards, interactive charts and billing reports.',
       'Developed a Python ETL pipeline that syncs report data into SQL Server, with automated validation and a data-quality dashboard.',
-      'Built approval-workflow applications with Microsoft SSO, including a vendor quotation comparison tool that replaced manual Excel analysis.',
+      'Built approval-workflow applications with Microsoft SSO, including a vendor quotation comparison tool.',
     ],
     tags: ['Laravel', 'ClickHouse', 'Python', 'Microsoft SSO'],
   },
