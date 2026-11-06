@@ -169,7 +169,7 @@ export const featuredProjects: Project[] = [
       'const isCredit = /credited|received/i.test(text);',
       'const type = isCredit ? "income" : "expense";',
     ],
-    glow: '#C6F432',
+    glow: '#E4A36A',
   },
   {
     title: 'Student Management',
@@ -189,7 +189,7 @@ export const featuredProjects: Project[] = [
       '        ->with("success", "Student added");',
       '}',
     ],
-    glow: '#F87171',
+    glow: '#C99A90',
   },
   {
     title: 'Soft Tissue Tumor Detection',
@@ -208,7 +208,7 @@ export const featuredProjects: Project[] = [
       '',
       'model = Model(base.input, out)',
     ],
-    glow: '#8B7CF6',
+    glow: '#93B09E',
   },
   {
     title: 'Smart File Organizer',
@@ -226,7 +226,7 @@ export const featuredProjects: Project[] = [
       '    target.mkdir(exist_ok=True)',
       '    shutil.move(file, target / file.name)',
     ],
-    glow: '#38BDF8',
+    glow: '#7F94A8',
   },
 ];
 

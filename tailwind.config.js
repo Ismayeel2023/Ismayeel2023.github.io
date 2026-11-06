@@ -4,12 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: '#0A0A0B',
-        surface: '#111114',
-        fg: '#EDEDEF',
-        muted: '#8B8B94',
-        accent: '#C6F432',
-        violet: '#8B7CF6',
+        ink: '#0B0A09',
+        surface: '#14120F',
+        fg: '#F2EDE4',
+        muted: '#8F887D',
+        accent: '#E4A36A',
+        sage: '#93B09E',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
